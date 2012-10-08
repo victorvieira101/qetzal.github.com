@@ -23,11 +23,6 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-@media screen and (max-width: 600px) {
-.ecwid-minicart-floating {
-      display:none;
-  }
-}
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
 body { line-height:1; }
@@ -39,27 +34,11 @@ del { text-decoration:line-through; }
 table { border-collapse:collapse;border-spacing:0; }
 
 body {
-    background: #E4E4E4 url("http://www.alistapart.com/d/responsive-web-design/ex/site/bg.png");
-    color: #292929;
-    color: rgba(0, 0, 0, 0.82);
-    font: normal 100% Cambria, Georgia, serif;
-    -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-    -webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    color: white;
     -webkit-text-size-adjust: none;
 }
-a {
-    color: #890101;
-    text-decoration: none;
-    -moz-transition: 0.2s color linear;
-    -webkit-transition: 0.2s color linear;
-    transition: 0.2s color linear;
-}
-a:hover {
-    color: #DF3030;
-}
+
 #page {
-    background: url("http://www.alistapart.com/d/responsive-web-design/ex/site/rag.png") repeat-x;
     padding: 2em 0;
 }
 .inner {
@@ -69,23 +48,10 @@ a:hover {
 img {
     max-width: 100%;
 }
-.amp {
-    font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
-    font-style: italic;
-    font-weight: normal;
-}
+
 .mast {
     float: left;
     width: 31.875%; /* 306px / 960px */
-}
-h1 {
-    background: url("http://www.alistapart.com/d/responsive-web-design/ex/site/logo-bg.png") no-repeat 50% 0;
-}
-h1 a {
-    padding-top: 117px;
-    height: 162px;
-    display: block;
-    text-align: center;
 }
 .intro,
 .main,
@@ -105,7 +71,6 @@ ul.nav {
     width: 64.379%;
 }
 ul.nav a {
-    background: url("http://www.alistapart.com/d/responsive-web-design/ex/site/ornament.png") no-repeat 0 100%;
     font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
     display: block;
     text-align: center;
@@ -132,14 +97,12 @@ ul.nav i {
     margin-bottom: 0.25em;
 }
 .main h2 {
-    background: url("http://www.alistapart.com/d/responsive-web-design/ex/site/ornament.png") no-repeat 0 50%;
     font-size: 1.4em;
     text-transform: lowercase;
     text-align: center;
     margin: 0.75em 0 1em;
 }
 .main h2 b {
-    background: url("http://www.alistapart.com/d/responsive-web-design/ex/site/bg.png");
     font-weight: normal;
     padding: 0 1em;
 }
@@ -174,7 +137,6 @@ li#f-winter {
     margin-right: 0;
 }
 .footer {
-    background: url("http://www.alistapart.com/d/responsive-web-design/ex/site/ornament.png") 50% 0 repeat-x;
     font-size: 12px;
     text-align: center;
     padding: 40px 0 20px;
@@ -182,7 +144,11 @@ li#f-winter {
 .footer p {
     margin-bottom: 0.5em;
 }
+
 @media (max-width: 600px) {
+    .ecwid-minicart-floating {
+      display:none;
+  }
     /* 633px grid (88x6 col, 21x5 gut; 88+21+88+21+88+21+88+21+88+21+88) */
     .inner {
         position: relative;
